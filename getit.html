@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET!T BROS</title>
+    <link rel="stylesheet" href="getit.css">
+</head>
+
+<body>
+    <div class="containner">
+        <header class="header">
+            <h1 id="title" class="text-center">成为GET!T的一员</h1>
+            <p id="description" class="description text-center">EST.2018</p>
+        </header>
+        <form id="surber-form">
+            <div class="form-group">
+                <label id="name-label" for="name">名字</label>
+                <input type="text" name="name" class="form-control" placeholder="在这里输入你的昵称" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">邮箱</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="在这里输入你的邮箱" required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">
+                    年龄
+                </label>
+                <input type="number" name="age" id="number" min="10" max="99" class="form-control"
+                    placeholder="在这里选择你的年龄">
+            </div>
+            <form id="surber-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">城市</label>
+                    <input type="text" name="name" class="form-control" placeholder="在这里输入你所在的城市" required>
+                </div>
+                <div class="form-group">
+                    <p>你的街头身份</p>
+                    <select name="role" id="dropdown" class="form-control" required>
+                        <option disabled selected value>请选择一项</option>
+                        <option value="student">Rapper说唱歌手</option>
+                        <option value="job">Producer制作人</option>
+                        <option value="learner">DJ唱片骑士</option>
+                        <option value="other">Graffitist街头画家</option>
+                        <option value="preferNO">Dancer霹雳舞者</option>
+                        <option value="other">Tattooist纹身艺术家</option>
+                        <option value="preferNO">Barber造型师</option>
+                        <option value="other">爱GET!T的人</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>你会推荐GET!T给你的朋友吗？</p>
+                    <label>
+                        <input name="user-recommed" value="definitely" type="radio" class="input-radio" checked>
+                        百分百必须！
+                    </label>
+                    <label>
+                        <input name="user-recommed" value="maybe" type="radio" class="input-radio">
+                        请容我三思
+                    </label>
+                    <label>
+                        <input name="user-recommed" value="not-sure" type="radio" class="input">
+                        我要偷偷藏着
+                    </label>
+
+                </div>
+                <div class="form-group">
+                    <p>你最喜欢GET!T的哪一点?</p>
+                    <select id="most-like" name="mostlike" class="form-control" required>
+                        <option disabled selected value>请选择一项</option>
+                        <option value="challenges">音乐</option>
+                        <option value="projscts">态度</option>
+                        <option value="community">颜值</option>
+                        <option value="openSource">穿搭</option>
+                    </select>
+
+                </div>
+                <div class="form-group">
+                    <p>
+                        你对他们有什么期望？
+                        <span class="clue">(可多选)</span>
+                    </p>
+                    <label>
+                        <input type="checkbox" name="prefer" value="front-end-projects" class="input-checkbox">
+                        更多好听的音乐
+                    </label>
+                    <label>
+                        <input type="checkbox" name="prefer" value="back-end-projects" class="input-checkbox">
+                        更多的交流聚会
+                    </label>
+                    <label>
+                        <input type="checkbox" name="prefer" value="data-visualization" class="input-checkbox">
+                        更酷的造型
+                    </label>
+                    <label>
+                        <input type="checkbox" name="prefer" value="challenges" class="input-checkbox">
+                        赶紧出个MV
+                    </label>
+                    <label>
+                        <input type="checkbox" name="prefer" value="open-source-community" class="input-checkbox">
+                        更成熟的制作
+                    </label>
+                    <label>
+                        <input type="checkbox" name="prefer" value="gitter-help-rooms" class="input-checkbox">
+                        更艺术的表达
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>留下你想对他们说的话</p>
+                    <textarea name="comment" id="comments" class="input-textarea" placeholder="我爱他们..."></textarea>
+                </div>
+                <div>
+                    <button type="submit" id="submit" class="submit-botton">注册</button>
+                </div>
+            </form>
+    </div>
+</body>
+
+</html>
